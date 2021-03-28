@@ -8,11 +8,25 @@ import { Horarios } from '../modelos/horario.models';
 })
 export class HorariosApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  private readonly url = 'http://localhost:5392/api/Horarios';
+  headerDict = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  }
+  
 
-  obtenerHorarios(): Observable<Horarios[]>{
-    return this.http.get<Horarios[]>(this.url);
+  private readonly url = '/api/Horarios';
+
+
+
+  obtenerHorarios(): Observable<any>{
+    return this.http.get<any>(this.url);
+  }
+
+  editarHorarios(id:number): Observable<Horarios[]>{
+
+    return this.http.put<Horarios[]>(this.url + "/",id);
   }
 }
