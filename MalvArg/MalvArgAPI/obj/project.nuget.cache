@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wectdPsOgWm1p8NgZJ4+03OOTNePryCkjojbcrNTblOFg+zDUjoWwHlmQ0IovhfYhyRuvJzTGm1hzfk1iR48Cg==",
+  "dgSpecHash": "2wtloPg5TMfitFctZWNehdstgcxb25k0y/2rAgLe/JBkepAand4RjCCg1270kzGycPAeYA/EjWb7im1lmW9vYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleto\\source\\repos\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
+  "projectFilePath": "D:\\Proyectos_Mios\\MalvinasArg\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\aleto\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

@@ -5890,11 +5890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleto\\source\\repos\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
+      "projectUniqueName": "D:\\Proyectos_Mios\\MalvinasArg\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
       "projectName": "MalvArgAPI",
-      "projectPath": "C:\\Users\\aleto\\source\\repos\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
+      "projectPath": "D:\\Proyectos_Mios\\MalvinasArg\\MalvArg\\MalvArgAPI\\MalvArgAPI.csproj",
       "packagesPath": "C:\\Users\\aleto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aleto\\source\\repos\\MalvArg\\MalvArgAPI\\obj\\",
+      "outputPath": "D:\\Proyectos_Mios\\MalvinasArg\\MalvArg\\MalvArgAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
