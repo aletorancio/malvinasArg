@@ -14,16 +14,17 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">{{horario.id}}</th>
-          <td>{{horario.cordoba}}</td>
-          <td>{{horario.ferreyra}}</td>
-          <td>{{horario.km80}}</td>
-          <td>{{horario.toledo}}</td>
-          <td>{{horario.rioSegundo}}</td>
-          <td>{{horario.pilar}}</td>
-          <td>{{horario.lagunaLarga}}</td>
-          <td><button class="btn btn-info" (click)="editarHorarios(horario.id)">Editar</button></td>
+        <tr *ngFor="let item of horario">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.cordoba}}</td>
+          <td>{{item.ferreyra}}</td>
+          <td>{{item.km80}}</td>
+          <td>{{item.toledo}}</td>
+          <td>{{item.rioSegundo}}</td>
+          <td>{{item.pilar}}</td>
+          <td>{{item.lagunaLarga}}</td>
+          <td><button class="btn btn-info" (click)="editarHorarios(item.id)">Editar</button></td>
+          <td><button class="btn btn-primary" routerLink="/horario/nuevo">Agregar</button></td>
         </tr>
       </tbody>
     </table>

@@ -3,6 +3,6 @@
         "target":"http://localhost:5392",
         "secure":false,
         "logLevel":"debug",
-        "pathRewrite" : {"^/api" : "http://localhost:5392"}
+        "pathRewrite" : {"^/api" : "http://localhost:5392/api"}
         }
     } 

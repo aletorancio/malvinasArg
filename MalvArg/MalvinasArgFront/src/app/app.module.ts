@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
 import { from } from 'rxjs';
+import { AgregarHorarioComponent } from './componentes/agregar-horario/agregar-horario.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AgregarHorarioComponent
   ],
   imports: [
     BrowserModule,

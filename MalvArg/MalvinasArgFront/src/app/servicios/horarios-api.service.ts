@@ -21,12 +21,15 @@ export class HorariosApiService {
 
 
 
-  obtenerHorarios(): Observable<any>{
-    return this.http.get<any>(this.url);
+  obtenerHorarios(): Observable<Horarios[]>{
+    return this.http.get<Horarios[]>(this.url);
   }
 
   editarHorarios(id:number): Observable<Horarios[]>{
+    return this.http.put<Horarios[]>(this.url,id);
+  }
 
-    return this.http.put<Horarios[]>(this.url + "/",id);
+  agregarHorarios(newHorario: Horarios): Observable<Horarios[]>{
+    return this.http.post<Horarios[]>(this.url,newHorario);
   }
 }

@@ -9,14 +9,15 @@ import { HorariosApiService } from 'src/app/servicios/horarios-api.service';
   providers: [HorariosApiService]
 })
 export class HomeComponent implements OnInit {
-  public horario: Horarios = new Horarios();
+  
+  public horario: Horarios[] = [];
 
   constructor(private service: HorariosApiService) { }
 
   ngOnInit(): void {
     this.service.obtenerHorarios().subscribe(
       resp => {
-        this.horario = resp[0];
+        this.horario = resp;
       },
       err =>{
         console.log(err);
@@ -28,7 +29,21 @@ export class HomeComponent implements OnInit {
     console.log(id);
     this.service.editarHorarios(id).subscribe(
       resp =>{
-        this.horario = resp[id];
+        //this.horario = resp[id];
+      },
+      err =>{
+        console.log(err);
+      }
+    )
+  }
+
+  agregarHorarios(newHorario: Horarios){
+    this.service.agregarHorarios(newHorario).subscribe(
+      resp=>{
+        console.log(resp);
+      },
+      err =>{
+        console.log(err);
       }
     )
   }
